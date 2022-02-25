@@ -1,0 +1,1 @@
+PHP with the GD graphics library version 2.0.x+ and ldap PHP extensions enabled;

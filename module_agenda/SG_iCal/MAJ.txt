@@ -1,0 +1,4 @@
+remplacer
+	require_once 'XXXXXXXXXXXXXXXX/mon_fichier.php';
+par
+	require_once 'SG_iCal/mon_fichier.php';

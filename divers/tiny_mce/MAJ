@@ -1,0 +1,11 @@
+Mise à jour TinyMCE  >>>>>>>>>>>   v3.5.7
+- telecharger la version Jquery (jQuery package)
+- telecharger les "pack language"  ->  Danish "da"  English "en"  Spanish "es"  French "fr"  Italian "it"  Dutch "nl"  Portuguese "pt"
+- ajouter les dossiers du "pack language"
+- ne garder que 6 plugins : "autoresize", "emotions", "media", "paste", "table", "visualchars"
+- ne garder que le theme "advanced"
+- ne garder que les scripts "jquery.tinymce.js", "tiny_mce.js", "tiny_mce_popup.js"
+- /themes/advanced/skins/default/content.css :
+	body, td, pre {color:#000; font-family:Arial, Verdana, Helvetica, sans-serif; font-size:12px; margin:8px;}
+	p {margin:0; padding: 0;}
+- enlever /themes/advanced/skins/o2k7  et  /themes/advanced/skins/highcontrast

@@ -1,0 +1,25 @@
+VERSION ACTUELLE :  1.5.7
+***************************
+
+Telecharger la dernière version et aller dans le dossier  "Plupload/js/jquery.plupload.queue"
+Recopier et paramétrer les fichiers suivants
+
+
+Traduire "jquery.plupload.queue.js":
+
+header				>>>>	enlever le block  "plupload_filelist_header"  et  "plupload_header"  (supprimer les "sous" div 1 par 1)
+Drag files here.	>>> 	"Glisser les fichiers ici !"  (présent 2 fois)
+Add files			>>> 	"Selectionner les fichiers" (présent 2 fois)
+Start upload		>>> 	enlever le bouton (balise <a>)
+Uploaded			>>>		"Envoye :" (présent 2 fois. ne pas supprimer les variables, mais uniquement le texte !)
+supprimer le texte	>>>		c("#"+k+"_container").attr("title","Using runtime: "+m.runtime);
+
+
+Modifier  "jquery.plupload.queue.css"
+
+../img/				>>>		img/
+plupload_add		>>>		width: 100px;
+plupload_container	>>>		padding: 1px; background-color:#999; -moz-border-radius: 3px; border-radius: 3px;
+plupload_scroll		>>> 	height: 200px;
+plupload_droptext	>>> 	font-size: 20px;
+plupload_add		>>>		width: 150px;

@@ -1,0 +1,1 @@
+delete folders :  "exemples"  "docs"  "test"

@@ -1,0 +1,17 @@
+<componentHeight value="100"/>
+<thumbHeight value="80"/>
+<offset value="0"/>
+<useShade value="true"/>
+<preloader value="scroller/redstripes.swf"/>
+<reflectionDistance value="0"/>
+<reflectionSpread value="40"/>
+<scrollMode value="finite"/>
+<scrollOnRollOver value="images"/>
+<onRollOutSpeed value="1"/>
+<stoppingSpeed value="5"/>
+<onRollOverSpeed value="30"/>
+<onRollOutSpeed value="0"/>
+<padding value="3"/>
+<cornerRadius value="3"/>
+<fontSize value="11"/>
+<backAlpha value="1"/>

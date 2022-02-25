@@ -1,0 +1,5 @@
+Deny from all
+
+<Files ~ "\.(mp3|swf|jpe?g|gif|png|bmp|tiff|xml|mp4|mpe?g|avi|flv|ogv|webm|wmv|mov)$">
+Allow from all
+</Files>

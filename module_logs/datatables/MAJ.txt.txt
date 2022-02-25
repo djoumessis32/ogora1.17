@@ -1,0 +1,12 @@
+Modif table.css:
+
+.paginate_disabled_next, .paginate_enabled_next {
+	height: 19px;
+	float: left;
+	cursor: pointer;
+	*cursor: hand;
+}
+
+tr.odd {background-color: #DDDDDD;}
+tr.odd td.sorting_1 {background-color: #ccc;}
+tr.even td.sorting_1 {background-color: #ddd;}

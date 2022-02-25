@@ -1,0 +1,630 @@
+VERSION 2.17.5.1 (09-2015)
+########################
+- Option de désactivation des Logs d'événements ("Durée de conservation des Logs" à "0" jours)
+- Correctifs mineurs sur les "timezones"
+- Librairie PHPmailer pour l'envoi des mails (penser à utiliser SPF et DKIM pour l'authentification des mails)
+
+
+VERSION 2.17.4 (09-2015)
+########################
+- Mise à jour jquery version 2.14 (de v1.11 à v2.1.4)
+- Mise à jour jquery-UI en version v1.11.4
+- intégration directe des fichiers Jquery
+- "favicon" dans les favoris et correction d'affichage du module "Favoris"
+- amélioration d'envoi des mails (penser à utiliser SPF et DKIM pour l'authentification des mails)
+
+
+VERSION 2.17.3.1 (08-2015)
+########################
+Optimisations du code et amélioration de performance
+Corrections diverses du code et patch de sécurité
+Correction des messages mal encodés de la messagerie instantanée
+Correction de certains liens de modifications d'utilisateurs
+
+
+VERSION 2.17.2 (06-2014)
+########################
+Ajout d'une confirmation de sortie des formulaires en cour d'édition
+Amélioration des fonctions de connexion à la base de données
+Amélioration de la procédure d'installation
+Amélioration de la création et le téléchargement des archives volumineuses (>=1Go)
+Amélioration de l'affichage des .pdf dans les FancyBox et prise en charge des fichiers .djvu
+Amélioration de l'affichage de Fancybox depuis le moteur de recherche
+Amélioration du menu latéral de téléchargement de dossier / d’éléments sélectionnés
+Correction de l'ordre des événements de la journée dans l'affichage "mois"
+Correction de l'affichage des agendas en fonction de la résolution d'écran
+Correction des droits d'accès aux éléments d'un dossier en écriture limité
+Correction de l'affichage/masquage du menu d’envoi simple ou multiple de fichiers
+Correction de l'affichage des images dans les notifications envoyés par mail (actualités, etc)
+Optimisation de l'affichage et du dimensionnement auto des fancybox
+Optimisations diverses du code, notamment le téléchargement des sauvegardes
+Optimisation de l'affichage du menu flottant de gauche
+Optimisation de l'enregistrement Ajax des résolutions d'écran après redimensionnement de fenêtre
+
+
+VERSION 2.17.1 (02-2014)
+########################
+Affichage des fichiers Pdf dans les lightBox
+Meilleure gestion des fonctions de controle de type de fichiers
+Mise à jour de dataTable (v1.7.5 -> v1.9.4) : correction d'affichage des Logs et d'erreurs de fichier JSON
+Meilleure prise en charge de l'extension de durée de session
+Meilleur affichage des descriptions des liens/favoris
+Correction de redirection à la fin d'une session dans une lightBox
+Correction du redimensionnement des lightbox si le contenu est plus grand que la page principale (cf. problement sur l'edition des espaces)
+Correction du pré-cochage de l'option "afficher tous les destinataires" du module de mail
+
+
+VERSION 2.17.0 (02-2014)
+########################
+Edition des elements dans des fenêtres de type "Lightbox" : plus simple, pratique, flexible et cross-platform
+Intégration des librairies Mysqli de connexion à la base de données, avec toujours une prise en charge des anciennes librairies pour PHP4
+Correction de la propagation du Click (l'affichage d'un fichier ou d'une tâche ne sélectionne plus le block de l'élément)
+Correction du placement des evenements dans les agendas de semaine (problème sous Chrome)
+Résolution du problème d'ascenseurs sous Ipad pour l'édition d'élement
+Meilleure présentation des historiques des mails envoyés
+Mise à jour de Jquery & PLUpload en version 1.5.7
+Corrections diverses
+
+
+VERSION 2.16.4.1 (10-2013)
+########################
+Amélioration des scripts de sélection multiple d'elements
+Correction du blocage de suppression d'espace sur des espaces "chargés"
+Correction du blocage de l'affichage du menu contextuel de gauche après déploiement de l'arborescence (module ayant une arborescence)
+Gestionnaire de fichiers : lors de l'ajout d'un fichier, l'envoi en pièce jointe des fichiers dans les notifications est désormais optionnelle
+
+
+VERSION 2.16.3 (06-2013)
+########################
+Amélioration du menu de connexion
+Module agenda : ajout d'un menu pour filtrer les événements par catégories
+Meilleure compatibilité des menus avec les appareils mobiles (Tablettes & co)
+Meilleure gestion des menus contextuels
+Meilleure gestion des clicks / dblClicks
+Mails de notification : ajout de la mention "Modif." s'il s'agit d'un element modifié
+Mise à jour de Jquery en v1.10.1 & Jquery-UI en v1.10.3, désormais importés depuis "http://ajax.googleapis.com". En mode déconnecté : décommenter les lignes ad'hoc du "includes/header.inc.php"
+Corrections Diverses
+
+
+VERSION 2.16.2 (04-2013)
+########################
+Meilleur calcul de la taille du "STOCK_FICHIERS" (affichage plus rapide s'il y a beaucoup de fichiers).
+Meilleur contrôle d'accès à un compte (en fonction de l'adresse IP)
+Meilleure gestion d'envoi des mails
+Correction diverses sur l'affichage de l'agenda
+Sélection/déselection d'agendas dans le menu de gauche listant les agendas (merci à Djedail pour sa contribution)
+
+
+VERSION 2.16.1 (02-2013)
+########################
+Modification du test de connexion LDAP sans passer par une fonction AJAX (module parametrage)
+Prise en charge des connexions LDAP sur Active Directory
+Possibilité d'importer des utilisateurs LDAP sans password (tel Active Directory) :
+- création du compte utilisateur à la volée, au moment de la connexion à l'agora.
+- création du compte utilisateur avec un mot de passe généré à la volée, si l'on passe par le tableau d'import.
+  -> Ajout de l'option "envoyer le mot de passe par mail aux utilisateurs nouvellement créés"
+Affichage de plusieurs agenda : affiche par défaut la synthese + un bouton "Voir tous les agendas"
+Mise à jour de PLUpload	:  V1.5.4 -> V1.5.5
+Mise à jour de TinyMCE	:  V3.5.7 -> V3.5.8
+	
+
+VERSION 2.16.0 (12-2012)
+########################
+Gestionnaire de fichiers :
+	les photos occupent désormais toute la surface du block, pour une meilleure visibilité des images
+	ajout dans le menu contextuel de la sélection de fichier (pour les photos) et du téléchargement du fichier depuis le compteur de downloads
+Possibilité de se connecter à un serveur LDAP :
+	Paramétrage du serveur LDAP dans le module d'administration (avec test de connexion)
+	Import d'utilisateurs avec sélection des utilisateurs à importer, et si besoin les espaces d'affection (module fusionné avec l'import via .csv)
+	Amélioration de l'importation via .csv/ldap : menus, tableaux d'importation, etc
+	Possibilité de créer un utilisateur à la volée dès sa connexion : si le compte est absent de l'Agora mais présent sur le serveur LDAP. Pour cela, il doit y avoir au moins un espace affecté à "tous les utilisateurs".
+Option pour filtrer l'affichage des tâches par "priorité"
+Option pour créer un agenda d'espace, lors de la création d'un nouvel espace
+Amélioration de l'affichage des sujets/messages
+
+
+VERSION 2.15.2 (11-2012)
+########################
+Ajout de la traduction Italienne [contribution de Ste]
+
+
+VERSION 2.15.1 (10-2012)
+########################
+Agenda de semaine : sélection de créneaux de 15mn pour la création d'événement
+Edition d'un espace : simplification du menu d'affectation des utilisateurs -> l'option  "utilisateur +"  disparait au profit de l'option générale  "Les utilisateurs peuvent envoyer des invitations par mail"
+Edition des droits d'accès d'un element : amélioration de la présentation & meilleure gestion des droits par défaut (nouveaux dossiers et dossiers racine)
+Messagerie instantanée : amélioration du menu de gestion de la messagerie instantanée
+Ajout de la version d'Agora-Project dans le nom du fichier javascript (meilleure mise à jour de la mémoire cache des navigateurs)
+Suppression automatique des invitations toujours pas validées au bout d'un an
+Optimisations diverses de performance
+Mise à jour de jQuery (v1.8.2) et TinyMCE (v3.5.7)
+Correction de l'affichage sur les résolutions inférieures à 1200px de large
+Correction des barres de tâche dans les diagrammes de Gantt simplifiés
+Correction d'affichage de l'edition d'un espace par l'administrateur (admin général non concerné)
+
+
+VERSION 2.14.1 (09-2012)
+########################
+Amélioration du menu de connexion
+Gestionnaire de fichier :
+	affichage d'une jauge d'occupation de l'espace disque (admin général)
+	amélioration du scroller d'images
+	correction de l'enregistrement en BDD de la taille finale des images optimisées
+Edition d'un espace :
+	utilisation du drag'n drop pour classer les modules
+	affichage des options d'un module uniquement s'il est sélectionné
+	amélioration du menu de sélection du fond d'écran
+Edition des utilisateurs :
+	clarification du menu
+	modification du menu des "IP de controle"
+Mise à jour de Jquery en 1.8.1
+Meilleure prise en charge du cache des navigateurs (header http)
+Correction de l'affichage du messenger & des menus flottants sous Internet Explorer 7/8
+Correction de l'affichage des espaces publics en page d'accueil si on est déjà identifié sur le site..
+
+
+VERSION 2.13.2 (06-2012)
+########################
+Notifications par mail de création d'événement : ajout de l'événement au format .Ical pour pouvoir l'ajouter d'un click sur son agenda local/mobile
+possibilité de modifier directement un fichier HTML depuis le gestionnaire de fichier (idem fichier .txt)
+Mise à jour de TinyMCE en 3.5.4 & suppression des parametrages obsolètes
+Rétablissement de l'accusé de réception pour l'envoi de mail
+Amélioration des libellés de notification de création de compte
+En collabotation avec zenk-security.com : suppression de failles de sécurité concernant les Captchas, le SALT de cryptage de password, le noms des Cookies, etc.
+Suppression de constantes obsolètes dans le fichier de config.
+Amélioration du contrôle javascript des emails
+Ajout de la traduction danoise (merci à Henrik Troels-Hansen!)
+Optimisations diverses
+
+
+VERSION 2.13.1 (05-2012)
+########################
+Agendas :
+- amélioration de l'affichage des agendas et de leur impression
+- meilleur affichage des syntheses d'agendas
+- hauteur automatique de l'agenda en fonction de la résolution d'écran
+- agendas semaine : sélection directe d'un créneaux horaires avant création d'un événement (cliquer & glisser sur plusieurs heures pour sélectionner un créneau horaire)
+- agenda mois : affichage des semaines complètes (derniers jours du mois précédents + premiers jours du mois suivant)
+- affichage des proposition d'événements directement depuis le tableau de bord (avec possibilité de les valider / invalider)
+Amélioration d'ergonomie :
+- meilleure navigation dans le menu d'arborescence de dossier
+- ajout du "click droit" sur un element pour afficher le menu contextuel
+- ajout du "doubleclick" pour modifier un element (dans les zones de l'élément ou il n'y a pas de lien href)
+- meilleur affichage dynamique du menu contextuel des élements (notamment en coins de page)
+- messagerie instantanée : zone de déplacement étendue à toute la surface du block (et non plus uniquement depuis le haut du block).
+Augmentation de la durée de session à 1h avec  "ini_set('session.gc_maxlifetime',3600);"  pour éviter les "déconnexions intempestives" si on désactive le messenger/livecounter
+Correction de l'export d'utilisateurs selon l'espace
+Simplification de la gestion des mises à jour :
+- ajout en BDD du champ "version_agora"
+- suppression dans config.inc.php de "version_agora" & "lang_defaut" : utilisation des champs en BDD
+Mise à jour de plugins :
+- Plupload : version  1.5.2  à  1.5.4
+- tinyMCE : version  3.4.8  à 3.5.0.1
+- JWplayer : 5.7 à 5.9
+
+
+VERSION 2.13.0 (03-2012)
+########################
+Possibilité de voir plusieurs contacts / utilisateurs sur une carte google map, avec fenêtre StreetView
+Paramétrage de l'espace : création de l'option "Permettre aux visiteurs de s’inscrire sur l'espace"
+-> possibilité de créer un compte utilisateur depuis la page d'accueil.
+-> la création du compte utilisateur doit néanmoins être validée par l'administrateur de l'espace
+Moteur de recherche :
+-> mise en surbrillance des termes recherchés, dans les résultats
+-> ajout d'une recherche avancée :
+--> rechercher certains mots / tous les mots / l'expression exacte
+--> rechercher par date de création
+--> recherche uniquement dans certains modules
+--> possibilité d'interroger plusieurs champs spécifiques
+Nouvelle gestion des catégories d'événement par espace (calqué sur les thèmes du forum)
+Utilisateurs : possibilité de supprimer (admin général) ou désaffecter (admin espace) plusieurs utilisateurs à la fois
+Possibilité pour un administrateur d'espace d'importer des utilisateurs via un fichier .csv
+Possibilité pour tous d'exporter les utilisateurs d'un espace via un fichier .csv
+Meilleure prise en charge des impressions d'agendas
+Correction de l'outil d'affectation d'utilisateurs existants dans un espace
+Simplification des menus d'affichage des utilisateurs (de l'espace / de tout le site)
+Optimisation du pager et du type d'affichage (liste/bloc)
+limitation d'accès des administrateurs d'espace : si un élément est affecté à plusieurs espaces et qu'il n'est affecté qu'en lecture seule à l'administrateur -> pas de privilège d'accès
+Mise à jour : Plupload (V.1.5.2) et TinyMce (V.3.4.8)
+
+
+VERSION 2.12.11 (01-2012)
+########################
+Simplification des styles CSS
+Simplification et optimisation des fichiers de traductions
+amélioration de la présentation des menus contextuels des elements
+correction du bug de telechargement de fichier joint à un événement affecté à un agenda visible en lecture seule
+
+
+VERSION 2.12.10 (12-2011)
+########################
+diverses optimisations de code
+correction de tradution concernant les "e-mail"
+amélioration de la présentation de la messagerie instantanée
+meilleure définition des largeurs d'elements en fonction des différentes résolutions d'écran
+rétablissement de l'envoi de notification par mail lors d'un ajout de nouvelle version de fichier
+Modification du script d'animation des icones et de redirection dans chaque module (problème sous d'anciennes versions de Chrome)
+note : le problème des popups de 50 pixels de large est causé par certaines versions de l'extension "firebug" (fonction window.resizeTo() neutralisée)
+
+
+VERSION 2.12.9 (11-2011)
+########################
+Ajout des images d'utilisateurs dans le messenger
+Correction des téléchargements de fichiers en https sous Internet Explorer 7 ou 8
+
+
+VERSION 2.12.8 (11-2011)
+########################
+Ajout d'une nouvelle version d'un fichier
+- Simplification du formulaire
+- Info "remplacement du nom du fichier"
+- Meilleure gestion des fichiers doublonnés
+Suppression de la dernière version d'un fichier :
+- amélioration des mises à jour des infos générales du fichier
+- mise à jour de la vignette si c'est une image
+Optimisation de l'upload des fichiers
+correction du déplacement d'un fichier à la racine
+amélioration du pager (affichage d'un nombre important de pages)
+amélioration de présentation :
+- listes d'espaces publics
+- gestion des groupes d'utilisateurs
+Correction de bugs sur la gestion de thèmes du forum
+Amélioration du "cpatcha"
+
+
+VERSION 2.12.7 (11-2011)
+########################
+Corrections :
+- affichage du bouton d'extension d'actualité
+- mise à jour de "gt_fichier_version"
+- infobulles contenant une balise <div>
+- parametrage par défaut de la "timezone"
+- ajout du champ "competence" dans l'import d'utilisateur via fichier .csv
+Optimisations
+- meilleure gestion de css dynamiques via Jquery
+- meilleure gestion des extensions de fichiers
+
+
+VERSION 2.12.6 (11-2011)
+########################
+optimisations :
+- redéfinition de certains contrôles de variable Globale et de certaines constantes
+- protection en lecture des "cookies"
+corrections :
+- affichage multiple des logs dans l'historique
+- création auto du champ "timezone" (concerne certains hébergements)
+- probleme de pagination (clause SQL "LIMIT") sur certains hébergements avec Mysql 5.0
+
+
+VERSION 2.12.5 (10-2011)
+########################
+menu contextuel des éléments : ajout de l'historique des modifications et consultations (dont téléchargements)
+Ajout des Logs de consultation d'élément, de déconnexion et de modifications diverses (modif. d'utilisateur, espace, paramétrage général, etc)
+Optimisation des tables de la base de données et de la gestion des logs
+Ajout du tri par date de dernière modif et par nombre de téléchargements (fichiers)
+diverses optimisations de l'affichage des dates
+Mises à Jour d'Agora :
+- ajout d'un contrôle de version sur chaque unité de MaJ
+- ajout d'une optimisation des tables en fin de MaJ
+upgrade du plugin d'envoi de fichiers Plupload (1.5.1.1)
+upgrade de l'éditeur de texte TinyMce (3.4.6)
+correction du téléchargement de dossiers
+affectation des sujets aux espaces : affichage des espaces affectés à un thème s'il n'est pas disponible sur tous les espaces
+ajout d'une version de fichier : affichage du nom original dans le popup d'historique
+affichage d'un thème non affecté à un espace dans le cas ou un sujet est affecté à l'espace et au thème
+Nouveau formulaire de connexion à espace public avec mot de passe (abandon du "Prompt" javascript)
+Validation d'invitation / réinitialisation de mot de passe : contournement du blocage d'IE9 par un nouveau "Prompt" (Nouveau formulaire)
+Téléchargement d'une version de fichier depuis le popup d'historique : utilisation du nom de fichier original
+résolution du problème de renommage des fichiers et dossiers téléchargés
+enregistrement de la consultation d'un lien du module favoris dans les LOGS.
+Optimisation diverses, notamment sur les lancements window.OnLoad désormais réalisés via JQuery
+Correction de présentation des libellés de fichier (pb de dépassement de cadre)
+contrôle des droits lors du déplacement d'un élément d'un dossier vers le dossier racine  => si droit de l'ancien dossier="écriture limité", l'élément hérite alors du droit "lecture"
+Ajout/Modif/Suppr d'un élément d'un dossier : enregistre dans les logs de ce dossier
+optimisation de la table des logs
+
+
+VERSION 2.12.4 (09-2011)
+########################
+ajout du module d'administrateur "journal des événements - Logs" : remerciement à "te-deum" pour tout le travail accompli sur ce nouveau module
+logs d'ajout / modif / téléchargement / suppression d'éléments
+logs des connexions a l'espace
+purge automatique des logs (module "paramétrage général").
+Pas de purge auto des logs de modif de chaque élément : garde les logs jusqu'à leur suppression
+menu contextuel d'un élément : affichage de l'auteur/date de la dernière modif + affichage du popup de l'historique complet des modifs (logs)
+suppression de nasUpload et mise à jour de Plupload en version 1.5 (prise en compte du Drag'n Drop sur Firefox, Chrome et Safari, Internet explorer avec Silverlight)
+Mise à jour de TinyMce : version 3.4.2 -> 3.4.5
+correction de "déconnexions intempestives" (suite aux remarques d'Ekozan : "session.gc_divisor" et infos de session inutiles)
+correction des validations d'invitation
+diverses optimisations
+
+
+VERSION 2.12.3.1 (08-2011)
+##########################
+correction diverses :
+- message d'erreur lors de l'affichage du popup "événement que j'ai créé" dès lors que l'on a aucun agenda accessible en lecture (minimum)
+- rétablissement du contrôle d'occupation des plages horaires des agendas (chevauchements) lors d'édition d'événements
+
+
+VERSION 2.12.3 (08-2011)
+##########################
+Nouvelle procédure de réinitialisation du mot de passe perdu :
+- ajout d'une confirmation par mail
+- possibilité de modifier directement son mot de passe
+Nouvelle procédure d'envoi d'invitation
+Modification du "header" des fichiers Zip générés "à la volée"
+Actualités archivées : affichage de la date de mise en ligne ou mise Offline
+Correction de l'ajout de messages dans le forum
+Corrections du bug des contrôles d'IP après reconnexion immédiate
+
+
+VERSION 2.12.2 (08-2011)
+########################
+Optimisation de la sauvegarde de la base de données
+Sauvegarde automatique de la base de données à la mise à jour du logiciel
+
+
+VERSION 2.12.1 (08-2011)
+########################
+actualités :
+- ajout de l'option de mise en ligne programmée d'une actualité
+- ajout du bouton "tout afficher" si une actualité dépasse 600px de hauteur
+- ajout de la recherche dans les actualités
+optimisation des éditions d'événement (affectation aux agendas)
+simplification du menu de sélection de la période du tableau de bord
+ajout de fonds d'écran
+correction de bugs :
+- changement d'espace, sur certaines versions de PHP..
+- affichage d’événements d'agendas accessibles en écriture restreints
+
+
+VERSION 2.12.0 (07-2011)
+########################
+Amélioration de la gestion des droits d’accès aux éléments :
+- les dossiers peuvent désormais être affectés en écriture restreint : droit d'ajouter de nouveaux éléments, mais sans modifier/supprimer ceux créés par d'autres utilisateurs
+- Ajout d'un droit d'accès spécifique aux invités d'un espace public : le droit d'accès aux invités n'est plus inclus dans le droit "tous les utilisateurs"
+- les affectations aux groupes sont gérés indépendamment : ce ne sont plus des cochages javascript d'utilisateurs
+- possibilité de donner accès en écriture limité a des agendas pour les invités : ils peuvent désormais proposer des événements
+- clarification des libellés des droits d'accès, notamment en écriture
+- ajout du droit d'affectation à "tous les espaces" (option pour l'administrateur général & uniquement s'il y a plusieurs espaces)
+ajout du bouton "télécharger le dossier" (et sous dossiers) dans le menu contextuel d'un dossier
+importations d'utilisateurs avec un fichier .csv : possibilité de sélectionner un/des espaces pour affecter automatiquement
+amélioration / simplification de la navigation dans le forum
+Modification du menu d'installation : possibilité de faire certains paramétrages de l'espace dès l'installation
+Amélioration de la gestion du téléchargement des sauvegardes, dans le module paramétrage
+Renforcement contre les injections SQL des utilisateurs connectés
+Renforcement des mots de passe avec adjonction d'un "grain de sel" dans les cryptages SHA1 [contribution de Te-deum]
+Passage de TinyMce en version 3.4.3.2
+Passage de JQuery en version 1.6.2
+Passage de JWPlayer en version 5.7
+Optimisation des requêtes sur les arborescences & les plugins des raccourcis / tableau de bord [contribution de Te-deum]
+Modification des champs "invité" (and co.) : type "text" -> "tinytext"
+Amélioration des index de clefs primaire
+Optimisation des livecounters (+ Messenger)
+Mise à jour de la documentation
+
+
+VERSION 2.11.2 (05-2011)
+########################
+Forum :
+- nouvel affichage des messages en mode "liste" (par défaut) :
+- affichage d'un bloc "citation" s'il s'agit d'une réponse à un message
+- possibilité de trier les messages par "date", "auteur", "titre" ou "description"
+- menu d'affichage en mode "liste" ou "arborescence"(ancien affichage)
+- ajout d'une "description" aux thèmes et modification du menu de gestion des thèmes
+- s'il y a plusieurs thèmes, affichage en premier de la liste des thèmes (+ date/auteur dernier message + date/auteur dernier sujet)
+- Option dans le paramétrage de l'espace pour "Ne pas afficher en premier les thèmes des sujets (s'il y en a plusieurs)"
+Groupes d'utilisateurs :
+- possibilité pour l'admin général de créer un groupe d'utilisateurs pour plusieurs espaces, voir pour tout le site
+- Option dans le paramétrage de l'espace : "Les utilisateurs peuvent également créer des groupes"
+- Meilleur contrôle des affectations depuis des groupes + révision du menu d'affectation des éléments
+Agenda :
+- Déplacement du réglage de la plage horaire des agendas : du profil de l'utilisateur vers l'édition de chaque agenda
+- Agenda de semaine : correction de l'affichage d’événements superposés (même créneau horaire) si plusieurs agendas affichés en même temps
+- Édition d'un événement : nouvelle présentation du contrôle de créneau horaire -> dans un cadre, avec horaire des créneaux occupés
+Divers :
+Ajout de la prévisualisation des fichiers .pdf (vignettes) dans le gestionnaire de fichiers (Nécessite la librairie PHP "Imagick")
+Amélioration du download de gros fichiers sur des hébergements avec une faible "memory_limit" du php.ini
+Mise à jour de tinyMCE : version 3.4.2
+Mise à jour de JWPlayer : version 5.5
+Mise à jour de Plupload : version 1.4.3.2
+
+
+VERSION 2.11.1.1 (03-2011)
+##########################
+Ajout de fichiers par "Glisser-déposer" pour les navigateurs prenant en charge HTML5 (Plupload). Exit IE...
+Exportation et importation des événements d'un agenda au format .ical (via menu contextuel de l'agenda, pour une synchro avec Outlook ou autre)
+Édition d'un utilisateur (admin. général) : ajout de la gestion des affectations aux espaces
+Module tâche : ajout du début et fin en "minutes" + meilleur affichage des dates, des "responsables" et du diagramme de gantt
+Affichage d'une icône si un élément est affecté uniquement à l'utilisateur courant : "élément personnel"
+Ajout de nouveaux fonds d'écran
+Modification du menu d'ajout de fichier aux éléments (pièces jointes)
+Modification du menu d'édition des utilisateurs et contacts
+Modification du menu de sélection des fonds d'écran + ajout de nouveaux fonds d'écran
+Modification du menu de sélection de la langue à l'installation
+Correction du blocage de validation d'Install en cas d'écrasement de base de données
+Correction de l'envoi d'invitation par mail
+passage à tinyMCE 3.4
+passage à JQuery 1.5
+passage à Plupload 1.4.2 (correction des bugs Chrome & Webkit)
+Édition d'un événement : Ajout d'un contrôle d'occupation du créneau horaire lors de la sélection d'un agenda (gestion des conflits d'événement en Ajax)
+Mise à jour du scroller d'image
+Mise à jour des bulles de prévisualisation des sites Web (version béta) dans le module "Favoris"
+défilement et rotation des images du gestionnaire de fichiers avec les flèches du clavier
+correction de l'affichage des smileys dans l'éditeur tinyMce
+Prévisualisation directe des sites dans le gestionnaire de liens
+Option pour exporter les événements d'un agenda par mail, et les importer dans l'agenda Iphone, Outlook...
+importation de calendrier Ical : comparaison des importations avec les événements déjà présents
+Agenda de semaine : meilleur affichage d'événements superposés (même créneau horaire)
+Module Favoris : création d'une option "ne pas afficher la prévisualisation des sites" (paramétrage de l'espace > module favoris > cocher "Ne pas afficher la prévisualisation des sites")
+option "afficher les destinataires dans le message" dans le module "mail"
+édition d'un événement : correction du bug de contrôle du créneau horaire avec 2 événements à heure fixe
+
+
+VERSION 2.11.0 (01-2011)
+########################
+création des groupes d'utilisateurs :
+- affectation d'éléments à des groupes d'utilisateurs
+- affectation d'événements à des groupes d'agendas d'utilisateurs
+- sélection de groupes d'utilisateurs dans le module "mail"
+modification du menu d'affectation des éléments
+ajout de la traduction en portugais
+paramétrage du fuseau horaire (paramétrage du site)
+affichage de la description des agendas de ressource, dans les différents menus du module agenda
+visualisation directe des pdf dans le gestionnaire de fichier (utilise le lecteur .pdf de l'ordinateur)
+amélioration de l'affichage des espaces, dans le module de gestion des espaces
+amélioration de la barre de menu (menu principal)
+amélioration du menu contextuel du module de gestion des utilisateurs
+modification du menu des suppressions d'événement : "supprimer" / "supprimer pour tous les agendas" / "supprimer uniquement pour cette date" (périodicité)
+optimisation du script PHP de listing des événements dans le module agenda
+meilleure présentation des éléments en affichage "liste"
+amélioration de la présentation des messages dans les forums
+optimisation du script de récupération des arborescences de messages dans les forums
+
+
+VERSION 2.10.6 (11-2010)
+########################
+video : ajout de la lecture de fichiers .WMV & .mov (necessite le plugin adéquat du navigateur)
+invité : mémorisation des agendas sélectionnés / affichage des dossiers / etc durant la session
+retouches de l'interface : ajout d'ombres portées aux elements, recadrage des photos dans le gestionnaire de fichiers, etc.
+révision du menu d'intégration de fichier joint dans la description d'un element : image / video / Mp3 / flash
+ajout des champs "heure_debut" et "heure_fin" dans le gestionnaire de taches
+correction de l'importation de contacts via fichiers .CSV
+remplacement de flowplayer par jwplayer (meilleure intégration dans tinyMCE)
+Installation : amélioration de la procédure et des différents contrôles
+optimisation du "livecounter_verif"
+
+
+VERSION 2.10.5 (10-2010)
+########################
+ajout de Flowplayer pour la lecture des videos en streaming dans le gestionnaire de fichier (formats MP4 / MPEG / FLV / OGV)
+Merci à Div pour sa contribution!
+description de tâches et d'événements : correction de l'affichage de l'éditeur tinyMCE
+optimisation de la taille des éléments : adaptation en fonction de la résolution d'écran
+
+
+VERSION 2.10.4 (10-2010)
+########################
+Envoi de mail : ajout des accusés de réception (merci à Fremendream pour sa contribution)
+gestion des taches : correction de l'affichage du total des budgets sur une arborescence de plusieurs niveaux (sous-dossiers)
+correction de l'enregistrement de conversation sur le messenger
+correction du contrôle du mail (type bibi@titi.toutou.fr) & des envoi de mails sur certains clients de messagerie
+passage de tinyMCE en version 3.3.9.2
+ajout de la traduction néérlandaise (merci à Lindes pour sa contribution)
+ajout de la traduction espagnole
+
+
+VERSION 2.10.3 (09-2010)
+########################
+ajout de couleurs dans la sélection de thèmes, catégories ou couleur du messenger
+optimisation de l'affichage des événements et corrections des événements masqués
+correction & optimisation de l'affichage des descriptions confidentielles dans les agendas
+
+
+VERSION 2.10.2 (09-2010)
+########################
+gestionnaire de fichier : apercu et modification directe des fichiers textes
+optimisation et corrections diverses sur la sauvegarde de l'agora (backup de grande taille)
+correction de l'affichage du menu contextuel de gauche sur IE7
+correction diverses concernant l'encodage des caractères pour l'envoi des mails
+correction du classement des priorités des tâches
+ajout du champ "civilité" dans l'import/export des contacts et utilisateurs
+
+
+VERSION 2.10.1 (09-2010)
+########################
+le menu contextuel de gauche est désormais flottant (descend avec l'ascenseur)
+paramétrage d'un agenda : ajout de l'option de présentation des événements (fond ou bordure de la couleur de la catégorie de l'événement)
+Tableau de synthèse de plusieurs agendas :
+- Ajout d'une ligne de synthèse affichant, pour chaque jour, les disponibilités des agendas
+- optimisation du temps d'affichage
+- accès direct à l'agenda complet depuis le tableau
+Modification du menu de gestion des photos d'utilisateurs / contacts
+Amélioration du menu d'affectation des éléments : + d'informations concernant les administrateurs & ajout de contrôles de cohérence
+mémorisation de la taille d'optimisation des images dans le gestionnaire de fichiers
+corrections :
+- affichage saccadé de la liste des espaces disponibles (affichage d'un grand nombre d'espaces)
+- affichage des dates sur certains serveurs ne prenant pas en charge le formatage de date en UTF8
+- présélections de proposition d'événement
+- modification de photo d'utilisateur
+- import de contacts / utilisateurs depuis un fichier CSV encodé en iso-8859-1
+- enregistrement des préférences
+- affichage des infobulles de description d'événement
+VERSION 2.10.0 (22-08-2010)
+agenda
+- modification de la présentation des événements
+- simplification du menu d'édition des événements
+- affichage décalé des événements sur plusieurs créneaux horaires (semainier)
+simplification du menu d'édition des espaces
+simplification du paramétrage du site
+Upgrade Editeur de texte Tiny_MCE => V3.3.6 > V3.3.8
+Upgrade JQuery => V1.3.2 > V1.4.2
+débuggage de la pré-affectation de nouveaux sous-dossiers
+paramétrage général du tri par défaut des personnes (utilisateurs, contacts, etc) : Nom ou Prénom
+Conversion de la base de données & de l'application à l'UTF8
+
+
+VERSION 2.10 (08-2010)
+######################
+agenda
+- modification de la présentation des événements
+- simplification du menu d'édition des evenements
+- affichage décalé des événements sur plusieurs créneaux horaires (semainier)
+simplification du menu d'édition des espaces
+simplification du parametrage du site
+Upgrade Editeur de texte Tiny_MCE => V3.3.6 > V3.3.8
+Upgrade JQuery => V1.3.2 > V1.4.2
+débuggage de la pré-affectations de nouveaux sous-dossiers
+parametrage général du tri par défaut des personnes (utilisateurs, contacts, etc) : Nom ou Prénom
+Conversion de la base de données & de l'application à l'UTF8
+
+
+VERSION 2.9.3 (06-2010)
+#######################
+Optimisation de l'affichage de la timeline des tâches (diagramme de gantt simplifié)
+tableau de synthèse de plusieurs agendas : si besoin, affichage de la catégorie des événements dans les cellules des jours
+mise à jour de tinyMCE : version 3.2.7 => 3.3.6
+barre avancement/charge pour un dossier : ajout de l'affichage de la valeur d'avancement, pondérée sur la charge jour/homme
+droits d'accès par défaut : écriture pour les conteneurs (dossiers, sujets du forum, etc) et lecture pour les autres éléments
+ajout de l'option "mémoriser identifiant" en page de connexion
+paramétrage du site :
+- option pour l'éditeur de texte tinymce => version allégée (par défaut) OU complète (+ média + "coller de word" + tableau)
+- option pour désactiver la messagerie instantanée sur tout le site
+- option pour afficher le nom du module au dessus de l'icône menu principal
+optimisations & corrections diverses
+ajout du nombre d'éléments affichés dans les menus contextuels de gauche
+retouche de l'interface & des icônes
+optimisation des requêtes de sélection d'éléments (pb de ralentissement)
+meilleure compatibilité Internet Explorer
+
+
+VERSION 2.9.2 (05-2010)
+#######################
+ajout de raccourcis pour les sujets du forum
+correction de l'affichage des doublons dans les sujets du forum
+correction du problème de confidentialité des actualités
+module tache (mes remerciements à Fred pour son aide précieuse sur ce module):
+- affichage en mode "liste" par défaut
+- ajout des champs "budget prévisionnel", "budget engage" et "charge jour/homme"
+- en mode "liste", affichage de barres de progression de temps, d'avancement et de budget
+- affichage d'une "timeline" (diagramme de Gantt simplifié) s'il y a plusieurs tâches délimitées par une période (début-fin)
+
+
+VERSION 2.9.1 (03-2010)
+#######################
+corrections diverses : date de dernière connexion et de durée de session
+diverses optimisations
+
+
+VERSION 2.9.0 (03-2010)
+#######################
+forum :
+- affichage de l'auteur et la date du dernier message
+- tri par défaut sur la date du dernier message, tri sur la description
+- mise en avant des sujets avec messages non consultés
+- option pour recevoir une notification par mail à chaque ajout de message
+correction de l'affichage des mails pour certains clients de messagerie (outlook express)
+modification / optimisation de l'affichage des dates
+correction des accès aux espaces publics pour les utilisateurs du site
+ajout du numéro de semaine dans les agendas
+affichage de l'auteur des éléments du tableau de bord
